@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Sale!</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Creación de variables para los colores y fuentes*/
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+
+    /* Styles Desktop Menu View */
+    * {
+        font-family: "Quicksand", sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+
+    .desktop-menu {
+        width: 100px;
+        height: auto;  /* toma el alto del contenido */
+        border: 1px solid var(--very-light-pink);
+        border-radius: 6px;
+        padding: 20px 20px 0 20px;
+
+    }
+
+    .desktop-menu ul {
+        list-style: none;
+        padding: 0; /* Por defecto los UL vienen con un padding y margin */
+        margin: 0;
+    }
+
+    .desktop-menu ul li {
+        text-align: end;
+    }
+
+    .desktop-menu ul li:last-child {
+        padding-top: 20px;
+        border-top: 1px solid var(--very-light-pink);
+    }
+
+    .desktop-menu ul li:last-child a {
+        color: var(--hospital-green);
+        font-size: var(--sm);
+    }
+
+    .desktop-menu ul li a {
+        color: var(--black);
+        font-size: var(--sm);
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <section class="desktop">
+        <div class="desktop-menu">
+            <ul>
+                <li>
+                    <a href="/">My orders</a>
+                </li>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>

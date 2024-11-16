@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Sale!</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Creación de variables para los colores y fuentes*/
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+
+    /* Styles My Order View */
+    * {
+        font-family: "Quicksand", sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+
+    .my-order {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        place-items: center;
+    }
+
+    .my-order-container {
+        grid-template-rows: auto 1fr auto ;
+        width: 400px;
+    }
+
+    .order {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--text-input-field);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+    }
+    .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+    }
+    .order p span:nth-child(1) {
+        font-size: var(--md);
+        color: var(--black);
+        font-weight: bold;
+    }
+    .order p span:nth-child(2) {
+        font-size: var(--sm);
+        font-weight: 300;
+    }
+    .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+    }
+
+    .tittle {
+        font-size: var(--lg);
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+
+    .my-order-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-order-content figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .shopping-cart {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+    .shopping-cart figure {
+        margin: 0;        
+    }
+    
+    .shopping-cart p:nth-child(2) {
+        color: var(--very-light-pink);
+    }
+    .shopping-cart p:nth-child(3) {
+        font-size: var(--md);
+        font-weight: bold;
+    }
+
+    @media (max-width: 640px) {
+        .my-order-container {
+            grid-template-rows: auto 1fr auto ;
+            width: 300px;
+        }
+
+        .tittle {
+            display: none;
+        }
+    }
+
+
+</style>
+<body>
+    <section class="my-order">
+        <div class="my-order-container">
+            <h1 class="tittle">My order</h1>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                </div>
+
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://i.pinimg.com/736x/a5/46/0a/a5460a4b101613d4c223df4999d74d6a.jpg" alt="cel-holder">
+                    </figure>
+                    <p>Selfie stick</p>
+                    <p>$ 12,00</p>
+                </div>
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://ae01.alicdn.com/kf/Sb7209d1dc50e4c1e98d8e474681048f4T.jpg_640x640q90.jpg" alt="t-shit"/>
+                    </figure>
+                    <p>T-shirt</p>
+                    <p>$ 15,00</p>
+                </div>
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdszDfmKo-RUCSGXQQu0msdFyaNO1HQx2tOw&s" alt="charger">
+                    </figure>
+                    <p>Wireless charger</p>
+                    <p>$ 45,00</p>
+                </div>
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://m.media-amazon.com/images/I/61MIHEwExfL._AC_UF1000,1000_QL80_.jpg" alt="notebook"/>
+                    </figure>
+                    <p>Sakura Diary</p>
+                    <p>$ 18,00</p>
+                </div>
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBbOYVf1QPhq5FXp24Do9hniIWExs815HSOw&s" alt="headphone"/>
+                    </figure>
+                    <p>Headphone kit</p>
+                    <p>$ 240,00</p>
+                </div>
+                <div class="shopping-cart">
+                    <figure>
+                        <img src="https://ateliershinji.com/wp-content/uploads/MG_8110.jpg" alt="bracelet"/>
+                    </figure>
+                    <p>Bracelet</p>
+                    <p>$ 60,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

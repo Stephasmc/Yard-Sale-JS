@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Sale!</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Creación de variables para los colores y fuentes*/
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+
+    /* Styles My Orders View */
+    * {
+        font-family: "Quicksand", sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+
+    .my-order {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        place-items: center;
+    }
+
+    .my-order-container {
+        grid-template-rows: auto 1fr auto;
+        width: 400px;
+    }
+
+    .order {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 12px;
+        cursor: pointer;
+
+    }
+    .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+    }
+    .order p span:nth-child(1) {
+        font-size: var(--md);
+        color: var(--black);
+        font-weight: bold;
+    }
+    .order p span:nth-child(2) {
+        font-size: var(--sm);
+        font-weight: 300;
+    }
+    .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+    }
+
+    .tittle {
+        font-size: var(--lg);
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+
+    .my-order-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 640px) {
+        .my-order-container {
+            grid-template-rows: auto 1fr auto ;
+            width: 300px;
+        }
+
+        .tittle {
+            display: none;
+        }
+    }
+
+
+</style>
+<body>
+    <section class="my-order">
+        <div class="my-order-container">
+            <h1 class="tittle">My orders</h1>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow-icone">
+                </div>
+            </div>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow-icone">
+                </div>
+            </div>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow-icone">
+                </div>
+            </div>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow-icone">
+                </div>
+            </div>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                    <span>12.24.2024</span>
+                    <span>6 articles</span>
+                    </p>
+                    <p>$ 390.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow-icone">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
